@@ -25,6 +25,7 @@ class GatewayConfiguration {
                 .route(rs -> rs
                         .path("/**")
                         .uri("http://localhost:8020")
+
                 )
                 .build();
     }

@@ -98,8 +98,8 @@ class UsersConfiguration {
         return args -> {
             var builder = User.builder().roles("USER");
             var users = Map.of(
-                    "jlong", "{bcrypt}$2a$10$7ZW0uVdZrIA8GNTWNyqi1OPYV3FDIBPiTd9JMdcSR6mFUnEj7PHLa",
-                    "rwinch", "{bcrypt}$2a$10$F5lMxawuaLSRwCwbE97sR.79u9ILRi0QQ92gTu.l1wGTXu6EdVdQy");
+                    "abrjoe", "{bcrypt}$2a$10$SG9BiBkQsu5sPD80zLkj5.2NCjSbz4swBn7lhCYjt3e14VqEBkt02",
+                    "user1", "{bcrypt}$2a$10$EIx6Z8bC5F5Fk.U4LApIuu3g915/1EC6NMqLeXL16LRzZy7X4r6T2");
             users.forEach((username, password) -> {
                 if (!userDetailsManager.userExists(username)) {
                     var user = builder
